@@ -20,7 +20,7 @@ public class checksumVerification {
 		for (Map.Entry<String, String> entry : mapData.entrySet())
 		{   
 		    if(entry.getKey().equals("CHECKSUMHASH")){
-				paytmChecksum = entry.getKey();
+				paytmChecksum = entry.getValue();
 			}else{
 				paytmParams.put(entry.getKey(), entry.getValue());
 			}
